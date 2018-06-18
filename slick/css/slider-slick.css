@@ -1,0 +1,43 @@
+.slider-slick {
+    display: flex;
+    align-items:flex-start;
+    background-color: ;
+    padding: 50px;      /* Внутрішні відступи зверху і знизу для контейнера слайдера */
+    /*min-height: 100vh; */ /* Розкоментуйте, якщо потрібно зробити слайдер на всю висоту контенту */
+    }
+
+.slider .item {
+    opacity: 100;            /* Неактивні слайди частково прозорі */
+    /*transform: scale(0);  /* Зменшення масштабу неактивних слайдів */
+    transition: all 300ms ease;  /* Плавні зміни усіх властивостей слайду */
+    padding: 10px
+    }
+
+.item.slick-current {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'FontAwesome';  /* Використовуємо шрифт Awesome для кнопок управління слайдером */
+    font-size: 1rem;
+    line-height: 1;
+    opacity: .75;
+    color: #eee;
+}
+
+.slick-prev:before {
+    content: '\f053';  /* Код (Unicode) символа 'fa-chevron-left' (стрілка вліво) з шрифта Awesome */
+}
+
+.slick-next:before {
+    content: '\f054';  /* Код (Unicode) символа 'fa-chevron-right' (стрілка вправо) з шрифта Awesome */
+}
+
+/* Для екранів шириною менше 767px */
+/* мінімальна висота слайдера      */
+/* рівну висоті viewport 100vh     */
+
+@media screen and (max-width:767px) {
+    
+}

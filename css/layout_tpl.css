@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.headerimg {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Плавні зміни властивостей лінків */
+
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    font-family: 'Leckerli One';
+    font-size: 40px
+}
+
+/*************************************/
+
+/* Зміни CSS коду розпочинати звідси */
+
+/*************************************/
+
+header .row {
+    min-height: 100vh;
+}
+
+section {
+    min-height: ;
+    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 20px;
+    /* Внітрішні відступи зверху та знизу у секціях <section> */
+}
+
+#header {
+    min-height: 100vh;
+}
+
+#s1 {
+    min-height: inherit;
+    background-image: url(../images/7.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 0;
+}
+
+#s1 {
+    font-size: 20px;
+}
+
+#s1 p {
+    margin-bottom: 40px;
+}
+
+#s1 h1.text-center {
+    font-family: 'Leckerli One';
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#s2 {
+
+    background-image: url(../images/4.jpg);
+    background-color: mediumseagreen;
+}
+
+#s2.row {
+    margin: 0;
+}
+
+#s3 {
+
+    /*    background-image: url();*/
+    background-color: #877f74;
+    min-height: 5vh;
+
+}
+
+.row {
+    display: block;
+    padding: ;
+    position: ;
+    align-content: ;
+    text-align: ;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px;
+
+}
+
+.footer .bot_men li a {
+    color: #fff;
+    display: block;
+    border-bottom: 3px solid #c10d0d;
+    font-size: 11px;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+    padding: 15px 0 9px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer img:hover {
+    -webkit-transform: rotateZ(30deg);
+    -ms-transform: rotateZ(30deg);
+    transform: rotateZ(30deg);
+}
+
+/**************************************/
+
+/* Зміна властивостей для breakpoints */
+
+/**************************************/
+
+@media screen and (max-width:992px) {
+    .hidden-down {
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+    @media screen and (max-width:768px) {
+    #s1 {
+        font-size: 16px;
+
+    }
+    .container,
+    .navbar {
+        padding-left: 15px;
+        /* Для Small додати відступи */
+        padding-right: 15px;
+        /* зліва та справа у .container та .navbar */
+    }
+
+
+    .hidden-down {
+        display: none;
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+    section {
+        padding: 0px 0;
+    }
+
+}

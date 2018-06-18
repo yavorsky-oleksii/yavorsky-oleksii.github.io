@@ -1,0 +1,85 @@
+.gallery {
+    padding: 0;
+    margin:0;
+}
+.gallery .row {
+    display:block;
+    margin:0;
+    margin-left: -20px;
+    padding: 0;
+}
+
+/* Override bootstrap column paddings */
+.gallery .row > div {
+    padding: 0 0 20px 20px;
+    margin:0;
+    float: left;
+}
+
+.gallery .lightbox {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.gallery .lightbox img {
+    width: 100%;
+    border-radius: 10px;
+    opacity: .7;
+    position: relative;
+    transition: 0.8s;
+}
+
+
+.gallery .lightbox:hover img {
+    opacity: 1;
+    transition: 0.5s;
+}
+.gallery .caption * {
+    flex-basis:100%;
+}
+
+/*.gallery .lightbox:before {*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -55px;
+    margin-left: -35px;
+    opacity: 0;
+    color: #aad4bc;
+    text-shadow: ;
+    font-size: 70px;
+    font-family: 'FontAwesome';
+    content: '\f06e';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+.gallery .lightbox:hover:before {
+    opacity: 10;
+}
+
+.gallery .lightbox:hover .caption {
+    background-color: rgba(150, 0, 0, 0.4);
+    opacity: 1;
+    transition: 0.5s;
+    height:100%;
+}
+.lightbox:hover {
+  -webkit-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+
+}
